@@ -1,5 +1,5 @@
 # gulp-example-project
-![](https://img.shields.io/github/license/a90100/gulp-example.svg)
+![](https://img.shields.io/github/license/a90100/gulp-example-project.svg)
 ![](https://img.shields.io/badge/gulp-4.0.2-yellow.svg)
 
 A gulp 4 example project contains several plugins.
