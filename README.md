@@ -1,48 +1,12 @@
 # gulp-example-project
 ![](https://img.shields.io/github/license/a90100/gulp-example-project.svg)
-![](https://img.shields.io/badge/gulp-4.0.2-yellow.svg)
 
-A gulp 4 example project contains several plugins.
+### Getting started
+1. `git clone https://github.com/a90100/express-gulp-boilerplate.git`
+2. cd to this repo.
+3. `npm install`
+4. run the server: `npm start`
+5. poen second terminal and run gulp: `gulp`
+6. open index.html with vscode-preview-server
 
-## Getting started
-`npm install`
-
-## File structure tree
-```
-|-- undefined
-    |-- .gitignore
-    |-- gulpfile.js
-    |-- package-lock.json
-    |-- package.json
-    |-- postcss.config.js
-    |-- public
-    |   |-- css
-    |   |   |-- index.css
-    |   |-- html
-    |   |   |-- index.html
-    |   |-- js
-    |       |-- index.js
-    |       |-- index.js.map
-    |-- source
-        |-- html
-        |   |-- index.pug
-        |-- js
-        |   |-- index.js
-        |-- sass
-            |-- index.sass
-```
-
-## Installed plugins
-* gulp-pug
-* gulp-sass
-* gulp-autoprefixer
-* gulp-postcss
-* gulp-babel
-* gulp-concat
-* gulp-sourcemaps
-* gulp-plumber
-* gulp-load-plugins
-* gulp-uglify
-* gulp-clean-css
-* gulp-clean
-* gulp-imagemin
+Now your server side and static files will auto reload when any code changed.
