@@ -1,4 +1,4 @@
-# express-gulp-boilerplate.git
+# express-gulp-boilerplate
 ![](https://img.shields.io/github/license/a90100/gulp-example-project.svg)
 
 ### Getting started
