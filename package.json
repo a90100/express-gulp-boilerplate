@@ -18,6 +18,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.1",
     "gulp-load-plugins": "^2.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",

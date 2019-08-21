@@ -4,12 +4,11 @@ var pipeline = require('readable-stream').pipeline;
 const $ = require('gulp-load-plugins')();
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src('source/html/*.pug')
+  return gulp.src('source/*.pug')
     .pipe($.plumber())
-    .pipe($.pug({
-
-    }))
-    .pipe(gulp.dest('./public/html'))
+    .pipe($.pug({}))
+    .pipe(gulp.dest('./public/'))
+    .pipe($.livereload())
 });
 
 gulp.task('sass', function () {
@@ -22,7 +21,8 @@ gulp.task('sass', function () {
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./public/css'))
+    .pipe($.livereload())
 });
 
 gulp.task('babel', () =>
@@ -39,6 +39,7 @@ gulp.task('babel', () =>
   }))
   .pipe($.sourcemaps.write('.'))
   .pipe(gulp.dest('./public/js'))
+  .pipe($.livereload())
 );
 
 gulp.task('clean', function () {
@@ -55,7 +56,7 @@ gulp.task('img-min', () =>
 );
 
 gulp.task('watch', function () {
-  gulp.watch('source/html/*.pug', gulp.series('pug'));
+  gulp.watch('source/*.pug', gulp.series('pug'));
   gulp.watch('source/sass/*.sass', gulp.series('sass'));
   gulp.watch('source/js/*.js', gulp.series('babel'));
 });
